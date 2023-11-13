@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( rgba(141, 194, 247, 0.381), rgba(0, 119, 255, 0.984)), url('../gambar/bg.jfif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path :square(100% 0, 100% 77%, 50% 100%, 0 75%, 0 0);
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .4;
+    z-index: -1;
+}
+
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .4;
+    z-index: -1;
+}
+
+.nav-item a{
+    color: #fff!important;
+    font-weight: bold;
+}
+
+.nav-item a:hover{
+    text-decoration: underline;
+}
+
+.header-section{
+    width: 100%;
+    height: inherit;
+    color :white;
+    text-align: center;
+    position: relative;
+}
+
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.header-buttons a{
+    border: 3px solid #fff;
+    border-radius: 100px;
+    margin : 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.header-buttons a:hover{
+    color: black;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 black;
+}
+
+.center-div{
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: #fff;
+}
+
+.kategori{
+    width: 100%;
+    height: auto;
+    margin: 100% 0;
+}
+
+.footerContainer{
+    background-color: black;
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.FooterNav{
+    margin: 30px 0;
+}
+
+.FooterNav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footerBottom p{
+    color: white;
+    text-align: center;
+}
